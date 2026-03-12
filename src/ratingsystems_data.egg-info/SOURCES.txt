@@ -1,0 +1,11 @@
+pyproject.toml
+src/ratingsystems/data/__init__.py
+src/ratingsystems/data/cbb.py
+src/ratingsystems/data/model/__init__.py
+src/ratingsystems/data/model/basketball.py
+src/ratingsystems_data.egg-info/PKG-INFO
+src/ratingsystems_data.egg-info/SOURCES.txt
+src/ratingsystems_data.egg-info/dependency_links.txt
+src/ratingsystems_data.egg-info/entry_points.txt
+src/ratingsystems_data.egg-info/requires.txt
+src/ratingsystems_data.egg-info/top_level.txt

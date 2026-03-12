@@ -1,0 +1,3 @@
+ratingsystems~=0.0
+cbbd~=1.23
+cfbd~=5.13

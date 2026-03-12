@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: ratingsystems-data
+Version: 0.1.0
+Summary: Library for data sources for rating systems
+Requires-Python: >=3.11
+Requires-Dist: ratingsystems~=0.0
+Requires-Dist: cbbd~=1.23
+Requires-Dist: cfbd~=5.13
