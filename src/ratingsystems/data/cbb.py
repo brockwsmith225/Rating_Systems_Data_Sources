@@ -18,12 +18,18 @@ class CBBDataSource(DataSource):
         games_api = cbbd.GamesApi(cbbd.ApiClient(configuration))
 
         data = []
-        data.extend(games_api.get_game_teams(season=self.year, season_type="regular", start_date_range=f"{self.year-1}-11-01T00:00:00", end_date_range=f"{self.year-1}-11-30T23:59:59"))
-        data.extend(games_api.get_game_teams(season=self.year, season_type="regular", start_date_range=f"{self.year-1}-12-01T00:00:00", end_date_range=f"{self.year-1}-12-31T23:59:59"))
-        data.extend(games_api.get_game_teams(season=self.year, season_type="regular", start_date_range=f"{self.year}-01-01T00:00:00", end_date_range=f"{self.year}-01-31T23:59:59"))
-        data.extend(games_api.get_game_teams(season=self.year, season_type="regular", start_date_range=f"{self.year}-02-01T00:00:00", end_date_range=f"{self.year}-02-28T23:59:59"))
-        data.extend(games_api.get_game_teams(season=self.year, season_type="regular", start_date_range=f"{self.year}-03-01T00:00:00", end_date_range=f"{self.year}-03-31T23:59:59"))
-        data.extend(games_api.get_game_teams(season=self.year, season_type="postseason", start_date_range=f"{self.year}-03-01T00:00:00", end_date_range=f"{self.year}-03-31T23:59:59"))
+        data.extend(games_api.get_game_teams(season=self.year, season_type="regular", start_date_range=f"{self.year-1}-11-01T00:00:00", end_date_range=f"{self.year-1}-11-15T23:59:59"))
+        data.extend(games_api.get_game_teams(season=self.year, season_type="regular", start_date_range=f"{self.year-1}-11-16T00:00:00", end_date_range=f"{self.year-1}-11-30T23:59:59"))
+        data.extend(games_api.get_game_teams(season=self.year, season_type="regular", start_date_range=f"{self.year-1}-12-01T00:00:00", end_date_range=f"{self.year-1}-12-15T23:59:59"))
+        data.extend(games_api.get_game_teams(season=self.year, season_type="regular", start_date_range=f"{self.year-1}-12-16T00:00:00", end_date_range=f"{self.year-1}-12-31T23:59:59"))
+        data.extend(games_api.get_game_teams(season=self.year, season_type="regular", start_date_range=f"{self.year}-01-01T00:00:00", end_date_range=f"{self.year}-01-15T23:59:59"))
+        data.extend(games_api.get_game_teams(season=self.year, season_type="regular", start_date_range=f"{self.year}-01-16T00:00:00", end_date_range=f"{self.year}-01-31T23:59:59"))
+        data.extend(games_api.get_game_teams(season=self.year, season_type="regular", start_date_range=f"{self.year}-02-01T00:00:00", end_date_range=f"{self.year}-02-15T23:59:59"))
+        data.extend(games_api.get_game_teams(season=self.year, season_type="regular", start_date_range=f"{self.year}-02-16T00:00:00", end_date_range=f"{self.year}-02-28T23:59:59"))
+        data.extend(games_api.get_game_teams(season=self.year, season_type="regular", start_date_range=f"{self.year}-03-01T00:00:00", end_date_range=f"{self.year}-03-15T23:59:59"))
+        data.extend(games_api.get_game_teams(season=self.year, season_type="regular", start_date_range=f"{self.year}-03-16T00:00:00", end_date_range=f"{self.year}-03-31T23:59:59"))
+        data.extend(games_api.get_game_teams(season=self.year, season_type="postseason", start_date_range=f"{self.year}-03-01T00:00:00", end_date_range=f"{self.year}-03-15T23:59:59"))
+        data.extend(games_api.get_game_teams(season=self.year, season_type="postseason", start_date_range=f"{self.year}-03-16T00:00:00", end_date_range=f"{self.year}-03-31T23:59:59"))
 
         games = []
         for game in data:
