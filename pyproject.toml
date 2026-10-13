@@ -22,3 +22,4 @@ namespaces = true
 
 [project.entry-points.ratingsystems]
 cbb = "ratingsystems.data:CBBDataSource"
+cfb = "ratingsystems.data:CFBDataSource"

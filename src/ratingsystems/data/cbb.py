@@ -30,6 +30,7 @@ class CBBDataSource(DataSource):
         data.extend(games_api.get_game_teams(season=self.year, season_type="regular", start_date_range=f"{self.year}-03-16T00:00:00", end_date_range=f"{self.year}-03-31T23:59:59"))
         data.extend(games_api.get_game_teams(season=self.year, season_type="postseason", start_date_range=f"{self.year}-03-01T00:00:00", end_date_range=f"{self.year}-03-15T23:59:59"))
         data.extend(games_api.get_game_teams(season=self.year, season_type="postseason", start_date_range=f"{self.year}-03-16T00:00:00", end_date_range=f"{self.year}-03-31T23:59:59"))
+        data.extend(games_api.get_game_teams(season=self.year, season_type="postseason", start_date_range=f"{self.year}-04-01T00:00:00", end_date_range=f"{self.year}-04-15T23:59:59"))
 
         games = []
         for game in data:
