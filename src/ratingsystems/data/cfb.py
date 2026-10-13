@@ -148,7 +148,7 @@ class CFBDataSource(DataSource):
                         expected_down = 1
 
                     if expected_yards_to_goal != next_play.yards_to_goal:
-                        if next_play.yards_to_goal == play.yards_to_goal + play.yards_gained and next_play.distance == play.distance + play.yards_gained:
+                        if next_play.yards_to_goal == play.yards_to_goal + play.yards_gained and next_play.distance == play.distance + play.yards_gained and expected_down == next_play.down:
                             # Check if yards gained was inverted
                             play.yards_gained = -1 * play.yards_gained
                             # pass
