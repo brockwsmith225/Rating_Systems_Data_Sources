@@ -26,6 +26,7 @@ class FootballPlay(Play):
     scoring: bool = field()
     play_type: str = field()
     play_text: str = field()
+    period: int = field()
     previous_play: Optional[Play] = field(default=None)
 
     # Scrimmage Plays

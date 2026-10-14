@@ -49,6 +49,7 @@ class CFBDataSource(DataSource):
                 scoring=play.scoring,
                 play_type=play.play_type,
                 play_text=play.play_text,
+                period=play.period,
             )
             for play in plays
         ])
